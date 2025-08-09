@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBrew Café</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div id="name"> 
+            <i id="mug" class="fa-solid fa-mug-hot"></i>
+            <h1>FreshBrew Café</h1> 
+            </div>
+            <nav>
+                <a href="#about">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <i id="search-icon" class="fas fa-search"></i>
+            </div>
+            <div class="header-icons">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="main">
+            <div class="para">
+                <p id="welcome">Welcome to FreshBrew Café</p>
+                <p id="desc">Where every sip feels like home and 
+                    <br>
+                every cup is brewed with warmth and care!</p>
+                <br>
+                <div id="btn">
+                    <a href="menu.html"><button>Order Now</button></a>
+                </div>
+            </div>
+            <img src="img/WhatsApp Image 2025-08-05 at 20.13.59_047b9ab3.jpg" alt="coffee" id="img">
+        </div>
+    </section>
+
+    <section class="specials">
+        <h2>Café Specials</h2>
+        <div class="products">
+            <div class="product">
+                <div class="product-img">
+                    <img src="img/WhatsApp Image 2025-08-05 at 20.13.59_4f758cc1.jpg" alt="Molten Lava">
+                    <span class="product-badge">Top Picks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Molten Lava</h3>
+                    <span class="price">Rs.350</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Molten Lava', 350)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-img">
+                    <img src="img/WhatsApp Image 2025-08-05 at 20.13.59_29c485e4.jpg" alt="Vanilla Latte">
+                    <span class="product-badge">Top Picks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Vanilla Latte</h3>
+                    <span class="price">Rs.250</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Vanilla Latte', 250)">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-img">
+                    <img src="img/WhatsApp Image 2025-08-05 at 20.13.59_def3e6e3.jpg" alt="Creamy Chicken Sandwiches">
+                    <span class="product-badge">Top Picks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Creamy Chicken Sandwiches</h3>
+                    <span class="price">Rs.300</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Creamy Chicken Sandwiches', 300)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p><strong>Brewed with passion, served with heart.</strong></p>
+            <p>Welcome to <strong>FreshBrew Café</strong>, your cozy neighborhood café nestled in the heart of Lahore.</p>
+            <p>Founded in 2020 by two lifelong friends with a shared love for coffee and community, FreshBrew started as a simple idea — to bring handcrafted, quality brews to a local space where everyone feels welcome.</p>
+            <p>From sourcing ethically grown beans to baking our pastries fresh every morning, every detail here is personal. Whether you're here for your morning espresso, a relaxed work session, or an evening chai with friends, we're more than just a coffee shop — we're your second home.</p>
+            <p>Our mission is simple: <strong>serve great coffee, support local, and build community</strong>.</p>
+            <p>We can't wait to share our passion with you. Come sip something special. ☕</p>
+            <p>— <em>Team FreshBrew</em></p>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get exclusive offers, seasonal specials, and coffee tips delivered to your inbox.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p class="disclaimer">We respect your privacy. No spam, ever.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>FreshBrew Café</h3>
+                <p>Serving warmth, one cup at a time.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 id="contact">Contact Us</h4>
+                <p>Email: hello@freshbrewcafe.com</p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Location: Peshawar, Pakistan</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FreshBrew Café. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>

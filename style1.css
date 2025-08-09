@@ -1,0 +1,110 @@
+
+
+
+body {
+    background-color: #f7a8a0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+header{
+    border:none ;
+    background-color: #F28B82 ; /* slightly deeper pink */
+}
+h1{
+   text-align: center;
+}
+ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin:0;
+    padding: 10px 0;
+   
+}
+a{
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s;
+}
+a:hover{
+    color: #FFE0E0;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+}
+
+.contact-me {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* space between contact and message */
+}
+
+.contact, .message {
+    width: 500px;
+    background-color: #f8cdc8;
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.contact h2, .message h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.text {
+    background-color: #f8cdc8;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #f48585;
+}
+
+#button {
+    display: block;
+    background-color: #f48585;
+    color: white;
+    height: 35px;
+    width: 200px;
+    margin: 15px auto 0 auto;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #e06666;
+}
+footer{
+    text-align: center;
+    background-color: #F28B82;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .contact, .message {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    .contact-me {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    #button {
+        width: 100%;
+    }
+      ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

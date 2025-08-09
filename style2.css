@@ -1,0 +1,152 @@
+body {
+    background-color: #FFB6B9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+ul{
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 10px 0;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #FFE0E0;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline;
+            font-size: 20px;
+        }
+
+        header {
+            border: none;
+            background-color: #F28B82;
+            /* slightly deeper pink */
+        }
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.row1, .row2, .row3, .row4, .row5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+#Html, #css, #C-lang, #java, #Ms-word, #Ms-excel, #power-point,#Ms-access,#Java-script, #problem-solving {
+    background-color: #FFEFEF;
+    border-radius: 16px;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#Html:hover, #css:hover, #C-lang:hover, #java:hover, #Java-script:hover, #Ms-word:hover, #Ms-excel:hover, #Ms-access:hover, #power-point:hover,#problem-solving:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    background-color: #fff5f5;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    padding-top: 30px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+/* Icon Styling */
+i {
+    font-size: 35px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+#Html i {
+    color: orange;
+}
+
+#css i {
+    color: blue;
+}
+
+#C-lang i {
+    color: black;
+}
+
+#java i {
+    color: red;
+}
+
+#Ms-word i {
+    color: #2B579A; 
+}
+
+#Ms-excel i {
+    color: #217346; 
+}
+
+#power-point i {
+    color: #D24726; 
+}
+
+#Java-script i {
+    color: #F0DB4F; 
+}
+
+#Ms-access i {
+    color: #A4373A; 
+}
+
+#problem-solving i {
+    color: #FFCC00; 
+}
+
+
+footer{
+    text-align: center;
+    background-color: #F28B82;
+    height: 50px;
+    line-height: 50px;
+ 
+
+}
+
+footer p{
+color: white;
+   
+}
+/*          
+@media screen {
+    
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  }

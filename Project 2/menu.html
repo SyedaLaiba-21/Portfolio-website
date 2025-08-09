@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - FreshBrew Café</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div id="name">
+            <i id="mug" class="fa-solid fa-mug-hot"></i>
+            <h1>FreshBrew Café</h1> 
+            </div>
+            <nav>
+                <a href="index.html#about">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="index.html#contact">Contact Us</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <i id="search-icon" class="fas fa-search"></i>
+            </div>
+            <div class="header-icons">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="menu"> 
+        <h2>Special Menu For You</h2>
+        <div class="menu-container">
+            <div class="menu-category">
+                <div class="menu-grid">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/WhatsApp Image 2025-08-05 at 20.13.58_a13f49d6.jpg" alt="Cookies">
+                            <span class="rating-badge">⭐ 4.5</span>
+                        </div>
+                        <h3>Cookies</h3>
+                        <p>Rs. 250</p>
+                        <button onclick="addToCart('Cookies', 250)">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/WhatsApp Image 2025-08-05 at 20.13.58_0ffa6fde.jpg" alt="Cappuccino">
+                            <span class="rating-badge">⭐ 4.0</span>
+                        </div>
+                        <h3>Cappuccino</h3>
+                        <p>Rs. 300</p>
+                        <button onclick="addToCart('Cappuccino', 300)">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/WhatsApp Image 2025-08-05 at 20.13.58_2c216588.jpg" alt="Cold Coffee">
+                            <span class="rating-badge">⭐ 4.7</span>
+                        </div>
+                        <h3>Cold Coffee</h3>
+                        <p>Rs. 280</p>
+                        <button onclick="addToCart('Cold Coffee', 280)">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/WhatsApp Image 2025-08-05 at 20.13.58_d9437ec3.jpg" alt="Cheese Cake">
+                            <span class="rating-badge">⭐ 4.5</span>
+                        </div>
+                        <h3>Cheese Cake</h3>
+                        <p>Rs. 220</p>
+                        <button onclick="addToCart('Cheese Cake', 220)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <div class="menu-grid">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/WhatsApp Image 2025-08-05 at 20.13.58_5b8eee68.jpg" alt="Hot Milk">
+                            <span class="rating-badge">⭐ 3.9</span>
+                        </div>
+                        <h3>Hot Milk</h3>
+                        <p>Rs. 270</p>
+                        <button onclick="addToCart('Hot Milk', 270)">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/WhatsApp Image 2025-08-05 at 20.13.58_a05446e4.jpg" alt="Panini Sandwich">
+                            <span class="rating-badge">⭐ 4.1</span>
+                        </div>
+                        <h3>Panini Sandwich</h3>
+                        <p>Rs. 350</p>
+                        <button onclick="addToCart('Panini Sandwich', 350)">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/WhatsApp Image 2025-08-05 at 20.13.58_69a6f97d.jpg" alt="Molten Lava Cake">
+                            <span class="rating-badge">⭐ 4.6</span>
+                        </div>
+                        <h3>Molten Lava Cake</h3>
+                        <p>Rs. 310</p>
+                        <button onclick="addToCart('Molten Lava Cake', 310)">Add to Cart</button>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/WhatsApp Image 2025-08-05 at 20.13.59_3124a809.jpg" alt="Waffle Ice-cream">
+                            <span class="rating-badge">⭐ 4.5</span>
+                        </div>
+                        <h3>Waffle Ice-cream</h3>
+                        <p>Rs. 290</p>
+                        <button onclick="addToCart('Waffle Ice-cream', 290)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>FreshBrew Café</h3>
+                <p>Serving warmth, one cup at a time.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 id="contact">Contact Us</h4>
+                <p>Email: hello@freshbrewcafe.com</p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Location: Peshawar, Pakistan</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FreshBrew Café. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
