@@ -43,7 +43,7 @@ h1 {
     font-size: 36px;
 }
 
-.row1, .row2, .row3, .row4, .row5 {
+.row1, .row2, .row3, .row4, .row5 ,.row6, .row7 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,7 +51,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-#Html, #css, #C-lang, #java, #Ms-word, #Ms-excel, #power-point,#Ms-access,#Java-script, #problem-solving {
+#Html, #css, #C-lang, #java, #Ms-word, #Ms-excel, #power-point,#Ms-access,#Java-script, #problem-solving, #figma, #shopify, #mysql{
     background-color: #FFEFEF;
     border-radius: 16px;
     width: 400px;
@@ -62,7 +62,7 @@ h1 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#Html:hover, #css:hover, #C-lang:hover, #java:hover, #Java-script:hover, #Ms-word:hover, #Ms-excel:hover, #Ms-access:hover, #power-point:hover,#problem-solving:hover {
+#Html:hover, #css:hover, #C-lang:hover, #java:hover, #Java-script:hover, #Ms-word:hover, #Ms-excel:hover, #Ms-access:hover, #power-point:hover,#problem-solving:hover, #figma:hover, #shopify:hover, #mysql:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     background-color: #fff5f5;
@@ -127,6 +127,17 @@ i {
     color: #FFCC00; 
 }
 
+#figma i {
+    color: #A259FF; 
+}
+
+#shopify i {
+    color: #7AB55C;
+}
+
+#mysql i {
+    color: #00758F; 
+}
 
 footer{
     text-align: center;
@@ -149,4 +160,5 @@ color: white;
     flex-direction: column;
     gap: 10px;
   }
+
   }
